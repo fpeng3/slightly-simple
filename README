@@ -1,8 +1,8 @@
 Read me :3
 
 Set-up:
-1. Type `about:config` in the Firefox search bar
-2. In about:config, type in `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
+1. Type ```about:config``` in the Firefox search bar
+2. In about:config, type in ```toolkit.legacyUserProfileCustomizations.stylesheets``` to ```true```
 
 
 To do: 

@@ -1,0 +1,9 @@
+Read me :3
+
+Set-up:
+1. Type `about:config` in the Firefox search bar
+2. In about:config, type in `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
+
+
+To do: 
+- Turn this into an extension with a manifest.json and slightly-simple.js and all that

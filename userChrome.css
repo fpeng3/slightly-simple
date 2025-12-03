@@ -35,3 +35,5 @@
 .toolbarbutton-1.chromeclass-toolbar-additional.subviewbutton-nav{
     display: none !important;
 }
+
+/* Note: Hide Activity Stream / Home content rules are in userContent.css */

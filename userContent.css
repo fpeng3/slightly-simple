@@ -11,19 +11,11 @@
 
 /* about:home and about:newtab */
 @-moz-document url("about:home"), url("about:newtab") {
-    .activity-stream {
-        body {
-            font-family: monospace !important;
-        }
-        .title-label {
-            font-family: monospace !important;
-        }
-    }
+
     body::before {
         font-family: monospace;
         content: "Show Sidebar: Alt+Ctrl+Z \A Show Bookmarks: Shift+Ctrl+B \A Ctrl+Alt+Shift+I: Browser Toolbox";
         white-space: pre;
-        /* Your custom message */
         display: block;
         text-align: left;
         font-size: 16px;
@@ -32,6 +24,14 @@
         padding: 10px;
         /* change your background below ig idk if it works lol */
         background-image: url("")
+    }
+
+    /* Use monospace for Activity Stream text and Top Sites */
+    .activity-stream,
+    .activity-stream *,
+    section[data-testid="top-sites"],
+    section[data-testid="top-sites"] * {
+        font-family: "Intel One Mono", monospace !important;
     }
 
     .search-wrapper {

@@ -1,0 +1,40 @@
+@-moz-document url("about:newtab"), url("about:home") {
+    .logo {
+        display: none !important;
+    }
+
+    main::before {
+        display: none !important;
+        /* Hides the wordmark */
+    }
+}
+
+/* about:home and about:newtab */
+@-moz-document url("about:home"), url("about:newtab") {
+    .activity-stream {
+        body {
+            font-family: monospace !important;
+        }
+        .title-label {
+            font-family: monospace !important;
+        }
+    }
+    body::before {
+        font-family: monospace;
+        content: "Show Sidebar: Alt+Ctrl+Z \A Show Bookmarks: Shift+Ctrl+B \A Ctrl+Alt+Shift+I: Browser Toolbox";
+        white-space: pre;
+        /* Your custom message */
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        color: #b0b3a6;
+        margin-bottom: 20px;
+        padding: 10px;
+        /* change your background below ig idk if it works lol */
+        background-image: url("")
+    }
+
+    .search-wrapper {
+        display: none;
+    }
+}
